@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+<body>
+    <script>
+        var form = document.createElement("FORM");
+          form.setAttribute("id", "pincode_form");
+          document.body.appendChild(form);
+        
+          var textField = document.createElement("INPUT");
+          textField.setAttribute("type", "text");
+          textField.setAttribute("value", "");
+          document.getElementById("pincode_form").appendChild(textField);
+          textField.onchange = (e)=>{
+                if (!(/^(\d{4}|\d{6})$/.test(e.currentTarget.value))) {
+                    alert ('invalid pincode');
+                }
+          }
+    </script>
+</body>
+</html>

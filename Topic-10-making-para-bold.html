@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <a href="#" onMouseOver="highlight()" onMouseOut="unHighlight()">On mouse over here bold words of the following
+        paragraph will be highlighted</a>
+    <p>
+        When a web page is loaded, the browser creates a <b>D</b>ocument <b>O</b>bject <b>M</b>odel of the page.
+        The <b>HTMLDOM</b> model is constructed as a tree of Objects
+    </p>
+    <script>
+        function highlight() {
+            bold_Items = document.getElementsByTagName('b');
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "blue";
+            }
+        }
+        function unHighlight() {
+            bold_Items = document.getElementsByTagName('b');
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "black";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

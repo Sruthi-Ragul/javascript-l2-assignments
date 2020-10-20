@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<h1>Click on the image below to open google homepage </h1>
+
+<head>
+    <script>
+        var myWindow;
+
+function openWin() {
+  myWindow = window.open("http://www.google.com", "myWindow", "width=200,height=100");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+    </script>
+</head>
+
+<body>
+    <a id="google" href="" target="_blank" onclick="openWin()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhoT7UQQnhnFCQmpcGRxx0HZ5TKxN-MHQtxA&usqp=CAU" alt="image" />
+    </a>
+    <br> <br>
+    <button onclick="closeWin()"> Close</button>
+</body>
+
+</html>
